@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://kamnuan.net/kamnuangpa/">
 <meta property="og:locale" content="th_TH">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"คำนวณเกรดเฉลี่ย GPA","url":"https://kamnuan.net/kamnuangpa/","description":"คำนวณเกรดเฉลี่ย GPA และวางแผน GPAX เป้าหมาย","applicationCategory":"EducationApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"THB"},"inLanguage":"th"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"GPA คำนวณยังไง","acceptedAnswer":{"@type":"Answer","text":"GPA คำนวณจากผลรวมของเกรดคูณหน่วยกิตของทุกวิชา หารด้วยผลรวมหน่วยกิตทั้งหมด เช่น วิชา A เกรด 4 หน่วยกิต 3 และวิชา B เกรด 3 หน่วยกิต 3 ได้ GPA เท่ากับ 3.50"}},{"@type":"Question","name":"GPA กับ GPAX ต่างกันยังไง","acceptedAnswer":{"@type":"Answer","text":"GPA คือเกรดเฉลี่ยของเทอมนั้น ส่วน GPAX คือเกรดเฉลี่ยสะสมตลอดหลักสูตร คำนวณจากทุกวิชาทุกเทอมรวมกัน"}}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"คำนวณเกรดเฉลี่ย GPA","url":"https://kamnuan.net/kamnuangpa/","description":"คำนวณเกรดเฉลี่ย GPA และวางแผน GPAX เป้าหมาย","applicationCategory":"EducationApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"THB"},"inLanguage":"th"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"GPA คำนวณยังไง","acceptedAnswer":{"@type":"Answer","text":"GPA คำนวณจากผลรวมของเกรดคูณหน่วยกิตของทุกวิชา หารด้วยผลรวมหน่วยกิตทั้งหมด เช่น วิชา A เกรด 4 หน่วยกิต 3 และวิชา B เกรด 3 หน่วยกิต 3 ได้ GPA เท่ากับ 3.50"}},{"@type":"Question","name":"GPA กับ GPAX ต่างกันยังไง","acceptedAnswer":{"@type":"Answer","text":"GPA คือเกรดเฉลี่ยของเทอมนั้น ส่วน GPAX คือเกรดเฉลี่ยสะสมตลอดหลักสูตร คำนวณจากทุกวิชาทุกเทอมรวมกัน"}},{"@type":"Question","name":"ต้องได้ GPA เทอมนี้เท่าไหร่คำนวณยังไง","acceptedAnswer":{"@type":"Answer","text":"ใช้สูตร GPA ที่ต้องได้ = [(GPAX เป้าหมาย คูณหน่วยกิตรวมใหม่) ลบ (GPAX ปัจจุบัน คูณหน่วยกิตสะสม)] หารด้วยหน่วยกิตเทอมนี้ ถ้าค่าที่ได้เกิน 4.00 แสดงว่าเป้าหมายสูงเกินไปในเทอมเดียว"}},{"@type":"Question","name":"เกรด B+ เท่ากับกี่แต้ม","acceptedAnswer":{"@type":"Answer","text":"ระบบเกรดมาตรฐานไทย: A=4.0, B+=3.5, B=3.0, C+=2.5, C=2.0, D+=1.5, D=1.0, F=0.0"}},{"@type":"Question","name":"GPA 3.5 เกียรตินิยมไหม","acceptedAnswer":{"@type":"Answer","text":"ส่วนใหญ่มหาวิทยาลัยไทยกำหนดเกียรตินิยมอันดับ 2 ที่ GPAX 3.50-3.74 และเกียรตินิยมอันดับ 1 ที่ 3.75 ขึ้นไป แต่เกณฑ์จริงแตกต่างกันไปตามแต่ละมหาวิทยาลัยและคณะ"}},{"@type":"Question","name":"GPAX ต่ำกว่า 2.00 มีผลยังไง","acceptedAnswer":{"@type":"Answer","text":"มหาวิทยาลัยส่วนใหญ่กำหนดให้ GPAX ต้องไม่ต่ำกว่า 2.00 จึงจะสำเร็จการศึกษาได้ ถ้าต่ำกว่านี้อาจถูกพักการเรียนหรือต้องลงทะเบียนเพิ่มเพื่อปรับเกรด"}}]}]}
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1063556443578237" crossorigin="anonymous"></script>
 <link rel="icon" href="favicon.ico">
@@ -74,11 +74,11 @@ header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:ce
 
 .result-box{display:none;margin-top:16px;}
 .result-top{background:#18181A;color:#FFFFFF;border-radius:var(--r-lg);padding:20px 16px;text-align:center;margin-bottom:10px;}
-.result-label{font-size:13px;opacity:.7;margin-bottom:4px;}
-.result-num{font-family:'Noto Serif Thai',serif;font-size:42px;font-weight:700;line-height:1.1;}
+.result-label{font-size:13px;opacity:.7;margin-bottom:8px;}
+.result-num{font-family:'Noto Serif Thai',serif;font-size:42px;font-weight:700;line-height:1.3;}
 .result-num.warn{color:#FCA5A5;}
 .result-num.hl{color:#86EFAC;}
-.result-sub{font-size:12px;opacity:.6;margin-top:6px;}
+.result-sub{font-size:12px;opacity:.6;margin-top:10px;}
 .gpa-bar-wrap{margin-top:14px;}
 .gpa-bar-track{height:8px;border-radius:4px;background:rgba(255,255,255,0.15);overflow:hidden;}
 .gpa-bar-fill{height:100%;background:#FFFFFF;border-radius:4px;width:0%;transition:width .5s ease;}
@@ -98,6 +98,12 @@ header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:ce
 .faq-a{max-height:0;overflow:hidden;font-size:14px;color:#52504C;line-height:1.7;transition:max-height .25s ease,padding .25s ease;padding:0 14px;background:#EFEFEC;}
 .faq-a.open{max-height:400px;padding:14px;}
 .faq-a strong{color:#18181A;}
+.info-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--b0);}
+.info-item{margin-bottom:16px;}
+.info-item:last-child{margin-bottom:0;}
+.info-title{font-size:14px;font-weight:600;color:#18181A;margin-bottom:6px;}
+.info-text{font-size:13px;color:#52504C;line-height:1.7;}
+
 .related-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--b0);}
 .related-title{font-size:11px;font-weight:600;color:#96938C;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
 .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
@@ -108,6 +114,13 @@ header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:ce
 footer{border-top:1px solid var(--b0);padding:20px 16px;text-align:center;font-size:12px;color:#96938C;line-height:2;}
 footer a{color:#96938C;text-decoration:none;}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5RPQNBN2DZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5RPQNBN2DZ');
+</script>
 </head>
 <body>
 <header role="banner">
@@ -222,6 +235,25 @@ footer a{color:#96938C;text-decoration:none;}
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">เกรด B+ เท่ากับกี่แต้ม<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="faq-a">ระบบเกรดมาตรฐานไทย: A=4.0, B+=3.5, B=3.0, C+=2.5, C=2.0, D+=1.5, D=1.0, F=0.0</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">GPA 3.5 เกียรตินิยมไหม<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ส่วนใหญ่มหาวิทยาลัยไทยกำหนด<strong>เกียรตินิยมอันดับ 2</strong> ที่ GPAX 3.50–3.74 และ<strong>เกียรตินิยมอันดับ 1</strong> ที่ 3.75 ขึ้นไป แต่เกณฑ์จริงแตกต่างกันไปตามแต่ละมหาวิทยาลัยและคณะ ควรตรวจสอบกับสถาบันของตัวเองอีกครั้ง</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">GPAX ต่ำกว่า 2.00 มีผลยังไง<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">มหาวิทยาลัยส่วนใหญ่กำหนดให้ GPAX ต้องไม่ต่ำกว่า <strong>2.00</strong> จึงจะสำเร็จการศึกษาได้ ถ้าต่ำกว่านี้อาจถูกพักการเรียนหรือต้องลงทะเบียนเพิ่มเพื่อปรับเกรด ขึ้นอยู่กับระเบียบของแต่ละสถาบัน</div>
+    </div>
+  </div>
+
+  <div class="info-wrap">
+    <div class="info-item">
+      <div class="info-title">GPA คืออะไร</div>
+      <div class="info-text">เกรดเฉลี่ยของภาคการศึกษาหนึ่งๆ คำนวณจากเกรดคูณหน่วยกิตของทุกวิชาที่ลงในเทอมนั้น หารด้วยหน่วยกิตรวม ใช้บอกผลการเรียนเฉพาะเทอม เปลี่ยนทุกเทอมตามวิชาที่เรียน</div>
+    </div>
+    <div class="info-item">
+      <div class="info-title">GPAX คืออะไร</div>
+      <div class="info-text">เกรดเฉลี่ยสะสมตลอดหลักสูตร นำทุกวิชาทุกเทอมที่เรียนมารวมกันคำนวณ ใช้เป็นเกณฑ์สมัครงาน สมัครเรียนต่อ หรือทุนการศึกษา ยิ่งเรียนหลายเทอม การเปลี่ยนแปลงของ GPAX ในแต่ละเทอมจะยิ่งน้อยลง เพราะหน่วยกิตสะสมมีน้ำหนักมากขึ้น</div>
     </div>
   </div>
 
